@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParamCube : MonoBehaviour
 {
-    public int _band;
+    public int _band = 1;
     public float _startScale, _scaleMultiplier;
     public bool _useBuffer;
 
