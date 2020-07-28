@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0016c85396f93749ad75849cfb9ac29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 1
+  _band: 8
   _startScale: 1
-  _scaleMultiplier: 3
+  _scaleMultiplier: 1
   _useBuffer: 1
 --- !u!1001 &7907769588986673800
 PrefabInstance:

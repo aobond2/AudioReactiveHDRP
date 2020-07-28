@@ -7,13 +7,17 @@ using UnityEngine;
 public class AudioRe : MonoBehaviour
 {
     AudioSource _audioSource;
-    public static float[] _samples = new float[512];
+    float[] _samples = new float[512];
     //public int FrequencyNumber;
-    public static float[] _freqBand = new float[8];
-    public static float[] _bandBuffer = new float[8];
+    float[] _freqBand = new float[8];
+    float[] _bandBuffer = new float[8];
     public float BufferDecreaseDown = 0.005f;
     public float BufferDecreaseUp = 1.2f;
     float[] _bufferDecrease = new float[8];
+
+    float[] _freqBandHighest = new float[8];
+    public static float[] _audioBand = new float[8];
+    public static float[] _audioBandBuffer = new float[8];
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,21 @@ public class AudioRe : MonoBehaviour
         GetSpectrumAudioSource();
         MakeFrequencyBands();
         BandBuffer();
+        CreateAudioBands();
+    }
+
+    void CreateAudioBands()
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            if (_freqBand[i] > _freqBandHighest[i])
+            {
+                _freqBandHighest[i] = _freqBand[i];
+            }
+            _audioBand[i] = (_freqBand[i] / _freqBandHighest[i]);
+            _audioBandBuffer[i] = (_bandBuffer[i] / _freqBandHighest[i]);
+
+        }
     }
 
     void GetSpectrumAudioSource()
@@ -36,7 +55,7 @@ public class AudioRe : MonoBehaviour
 
     void BandBuffer()
     {
-        for (int g = 0; g < 8; g++)
+        for (int g = 0; g < 8; ++g)
         {
             if (_freqBand [g] > _bandBuffer [g])
             {

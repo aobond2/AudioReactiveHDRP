@@ -32,7 +32,7 @@ public class CubeInstantiate : MonoBehaviour
         {
             if (_sampleCube != null)
             {
-                _sampleCube[i].transform.localScale = new Vector3(_cubeSize , (AudioRe._samples[i] * _maxScale) + 2, _cubeSize);
+                //_sampleCube[i].transform.localScale = new Vector3(_cubeSize , (AudioRe._samples[i] * _maxScale) + 2, _cubeSize);
             }
         }
     }
