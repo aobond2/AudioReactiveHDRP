@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 1757314232}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &106259353
 Transform:
   m_ObjectHideFlags: 19
@@ -624,8 +625,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 337730753}
-  - component: {fileID: 337730755}
   - component: {fileID: 337730754}
+  - component: {fileID: 337730755}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -661,6 +662,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BufferDecreaseDown: 0.005
   BufferDecreaseUp: 1.2
+  _audioProfile: 8
+  channel: 1
 --- !u!82 &337730755
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1462,7 +1465,7 @@ PrefabInstance:
     - target: {fileID: 6738753769421426159, guid: 539f2841b3b3ce34fb34d597c322c714,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.94
+      value: 3.45
       objectReference: {fileID: 0}
     - target: {fileID: 6738753769421426159, guid: 539f2841b3b3ce34fb34d597c322c714,
         type: 3}

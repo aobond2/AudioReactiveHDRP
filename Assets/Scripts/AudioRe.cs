@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,22 +8,32 @@ using UnityEngine;
 public class AudioRe : MonoBehaviour
 {
     AudioSource _audioSource;
-    float[] _samples = new float[512];
-    //public int FrequencyNumber;
-    float[] _freqBand = new float[8];
-    float[] _bandBuffer = new float[8];
+    private float[] _samplesLeft = new float[512];
+    private float[] _samplesRight = new float[512];
+
+    private float[] _freqBand = new float[8];
+    private float[] _bandBuffer = new float[8];
     public float BufferDecreaseDown = 0.005f;
     public float BufferDecreaseUp = 1.2f;
-    float[] _bufferDecrease = new float[8];
+    private float[] _bufferDecrease = new float[8];
+    private float[] _freqBandHighest = new float[8];
 
-    float[] _freqBandHighest = new float[8];
-    public static float[] _audioBand = new float[8];
-    public static float[] _audioBandBuffer = new float[8];
+    public static float[] _audioBand, _audioBandBuffer;
+
+    public static float _Amplitude, _AmplitudeBuffer;
+    float _AmplitudeHighest;
+    public float _audioProfile;
+
+    public enum _channel {Stereo, Left, Right};
+    public _channel channel = new _channel();
 
     // Start is called before the first frame update
     void Start()
     {
-        _audioSource = GetComponent<AudioSource>();        
+        _audioBand = new float[8];
+        _audioBandBuffer = new float[8];
+        _audioSource = GetComponent<AudioSource>();
+        AudioProfile(_audioProfile);
     }
 
     // Update is called once per frame
@@ -32,6 +43,32 @@ public class AudioRe : MonoBehaviour
         MakeFrequencyBands();
         BandBuffer();
         CreateAudioBands();
+        GetAmplitude();
+    }
+
+    void AudioProfile(float audioProfile)
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            _freqBandHighest[i] = audioProfile;
+        }
+    }
+
+    void GetAmplitude()
+    {
+        float _CurrentAmplitude = 0;
+        float _CurrentAmplitudeBuffer = 0;
+        for (int i = 0; i < 8; i++)
+        {
+            _CurrentAmplitude += _audioBand[i];
+            _CurrentAmplitudeBuffer += _audioBandBuffer[i];
+        }
+        if (_CurrentAmplitude > _AmplitudeHighest)
+        {
+            _AmplitudeHighest = _CurrentAmplitude;
+        }
+        _Amplitude = Mathf.Clamp01 (_CurrentAmplitude / _AmplitudeHighest);
+        _AmplitudeBuffer = Mathf.Clamp01 (_CurrentAmplitudeBuffer / _AmplitudeHighest);
     }
 
     void CreateAudioBands()
@@ -50,7 +87,8 @@ public class AudioRe : MonoBehaviour
 
     void GetSpectrumAudioSource()
     {
-        _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
+        _audioSource.GetSpectrumData(_samplesLeft, 0, FFTWindow.Blackman);
+        _audioSource.GetSpectrumData(_samplesRight, 1, FFTWindow.Blackman);
     }
 
     void BandBuffer()
@@ -86,7 +124,18 @@ public class AudioRe : MonoBehaviour
             }
             for (int j = 0; j < sampleCount; j++)
             {
-                average += _samples[count] * (count + 1);
+                if (channel == _channel.Stereo)
+                {
+                    average += (_samplesLeft[count] + _samplesRight[count]) * (count + 1);
+                }
+                if (channel == _channel.Left)
+                {
+                    average += _samplesLeft[count] * (count + 1);
+                }
+                if (channel == _channel.Right)
+                {
+                    average += _samplesRight[count] * (count + 1);
+                }
                 count++;
             }
 
