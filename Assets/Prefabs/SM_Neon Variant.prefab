@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0016c85396f93749ad75849cfb9ac29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioRe: {fileID: 0}
   _band: 8
   _startScale: 1
   _scaleMultiplier: 1

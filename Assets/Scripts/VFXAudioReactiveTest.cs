@@ -8,7 +8,7 @@ using UnityEngine.VFX;
 
 public class VFXAudioReactiveTest : MonoBehaviour
 {
-    //public int _band = 1;
+    public AudioRe audioRe;
     public float bandScale;
     public VisualEffect visualEffect;
     public float Band;
@@ -24,7 +24,7 @@ public class VFXAudioReactiveTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        updatedBand = AudioRe._audioBand[(int)Band] * bandScale;
+        updatedBand = audioRe._audioBand[(int)Band] * bandScale;
         visualEffect.SetFloat (bandParameter, updatedBand);
     }
 }

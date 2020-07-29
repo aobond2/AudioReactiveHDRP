@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TubeLightCreate : MonoBehaviour
 {
+    public AudioRe audioRe;
     Renderer rend;
     Vector3 rend_size;
     public float cube_distance = 1f;
@@ -33,6 +34,7 @@ public class TubeLightCreate : MonoBehaviour
             spawn_start.x = spawn_start.x + cube_distance;
             i += 1;
             cube._band += 1;
+            cube.audioRe = audioRe;
         }
 
         DestroyImmediate(rend);
