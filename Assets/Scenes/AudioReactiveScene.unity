@@ -1401,6 +1401,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6738753769421426159, guid: 539f2841b3b3ce34fb34d597c322c714,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.51562
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 539f2841b3b3ce34fb34d597c322c714, type: 3}
 --- !u!1001 &509749528
@@ -5818,7 +5823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765796680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 8.42, z: 2.62}
+  m_LocalPosition: {x: -0, y: 8.42, z: -0.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059697187}
@@ -6531,7 +6536,7 @@ Transform:
   m_GameObject: {fileID: 1819247804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.00000017881, y: 0.558, z: -6.05}
-  m_LocalScale: {x: 5.9817243, y: 1, z: 0.32287}
+  m_LocalScale: {x: 7.520945, y: 1, z: 0.32287}
   m_Children: []
   m_Father: {fileID: 1104725673}
   m_RootOrder: 0
@@ -6551,6 +6556,7 @@ MonoBehaviour:
   audioRe: {fileID: 337730754}
   cube_distance: 0.2
   prefab: {fileID: 7652939536952106339, guid: 22773544a86c0844988e28b18092acb9, type: 3}
+  _64frequency_used: 0
 --- !u!65 &1819247807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6745,7 +6751,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e1c3e7c286bfebd4dacf81d3fd92a1e1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.11
+      value: -4.419
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1c3e7c286bfebd4dacf81d3fd92a1e1,
         type: 3}
