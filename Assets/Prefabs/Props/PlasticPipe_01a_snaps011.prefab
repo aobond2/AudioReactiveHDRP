@@ -150,28 +150,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
       propertyPath: m_LODs.Array.size
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[0].renderers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[2].renderers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[3].renderers.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
       propertyPath: m_LODs.Array.data[4].screenRelativeHeight
-      value: 0.0035227584
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
       propertyPath: m_LODs.Array.data[3].screenRelativeHeight
-      value: 0.012679423
+      value: 0.005804989
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
       propertyPath: m_LODs.Array.data[2].screenRelativeHeight
-      value: 0.03293352
+      value: 0.021643084
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.06223313
+      value: 0.06226213
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0
+      value: 0.15900001
       objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 532704630317806180}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[2].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 532704630317806180}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[3].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 532704630317806180}
+    - target: {fileID: 20500000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
+      propertyPath: m_LODs.Array.data[4].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 532704630317806180}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 438bcde8277890245b7ba2046122f614, type: 3}
 --- !u!1 &532704630320065702 stripped
@@ -183,6 +215,12 @@ GameObject:
 --- !u!4 &532704630319706246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 438bcde8277890245b7ba2046122f614,
+    type: 3}
+  m_PrefabInstance: {fileID: 532704630320097798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &532704630317806180 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300002, guid: 438bcde8277890245b7ba2046122f614,
     type: 3}
   m_PrefabInstance: {fileID: 532704630320097798}
   m_PrefabAsset: {fileID: 0}

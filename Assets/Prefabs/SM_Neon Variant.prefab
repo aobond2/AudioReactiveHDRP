@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioRe: {fileID: 0}
-  _band: 8
+  _band: 39
   _startScale: 1
   _scaleMultiplier: 1
   _useBuffer: 1

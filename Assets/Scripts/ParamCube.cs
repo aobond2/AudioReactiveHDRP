@@ -12,20 +12,20 @@ public class ParamCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        print(audioRe);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //print(audioRe._AmplitudeBuffer);
-        if (_useBuffer && audioRe._audioBand64[_band] > 0)
+        
+        if (_useBuffer && audioRe._audioBand64[_band] > 0 && audioRe != null)
         {
             transform.localScale = new Vector3(transform.localScale.x,
                                     (audioRe._audioBandBuffer64[_band] * _scaleMultiplier) + _startScale,
-                                    audioRe._AmplitudeBuffer * 5);//transform.localScale.z);
+                                    transform.localScale.z);
         }
-        if (!_useBuffer && audioRe._audioBand64[_band] > 0)
+        if (!_useBuffer && audioRe._audioBand64[_band] > 0 && audioRe != null)
         {
             transform.localScale = new Vector3(transform.localScale.x,
                                     (audioRe._audioBand64[_band] * _scaleMultiplier) + _startScale,

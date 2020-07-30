@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class TubeLightCreate : MonoBehaviour
 {
-    public AudioRe audioRe;
+    public AudioRe _audioRe;
     Renderer rend;
     Vector3 rend_size;
     public float cube_distance = 1f;
-    Vector3 spawn_start;
     public Transform prefab;
     float rend_length;
     int instance_number;
@@ -37,7 +36,7 @@ public class TubeLightCreate : MonoBehaviour
             spawn_start.x = spawn_start.x + cube_distance;
             i += 1;
             cube._band += rounded_frequency;
-            cube.audioRe = audioRe;
+            cube.audioRe = _audioRe;
             tubes_number += 1;
         }
 
