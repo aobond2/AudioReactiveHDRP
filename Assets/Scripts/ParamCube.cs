@@ -30,7 +30,7 @@ public class ParamCube : MonoBehaviour
             {
                 transform.localScale = new Vector3(transform.localScale.x,
                                         (audioRe._audioBand64[_band] * _scaleMultiplier) + _startScale,
-                                        transform.localScale.z);
+                                        (audioRe._Amplitude *2 )); //+ transform.localScale.z);
             }
         }
 
