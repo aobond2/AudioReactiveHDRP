@@ -154,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 01fe69cff34838c43a0b414cf0b76eae, type: 3}
       propertyPath: m_LODs.Array.data[0].renderers.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 20500000, guid: 01fe69cff34838c43a0b414cf0b76eae, type: 3}
       propertyPath: m_LODs.Array.data[1].renderers.Array.size
