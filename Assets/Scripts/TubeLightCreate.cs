@@ -72,16 +72,11 @@ public class TubeLightCreate : MonoBehaviour
         {
             GameObject rotate = tubeList[UnityEngine.Random.Range(0, tubeList.Count)];            
             RotateTube tubeRotation = rotate.GetComponent<RotateTube>();
-            //tubeRotation.Rotated = true;
-            //print(rotate);
             if (tubeRotation.Rotated == false)
             {
 
                 tubeRotation.Rotate();
                 tubeRotation.Rotated = true;
-                //print(rotate);
-                //rotate.transform.Rotate(0, 20, 0, Space.Self);
-
             }
         }
     }

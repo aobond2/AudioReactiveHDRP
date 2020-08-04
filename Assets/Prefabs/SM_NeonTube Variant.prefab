@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioRe: {fileID: 0}
-  _band: 63
+  _band: 0
   _startScale: 1
   _scaleMultiplier: 1
   _useBuffer: 1
+  _objectNumber: 0
 --- !u!1 &7118394987613810914
 GameObject:
   m_ObjectHideFlags: 0
