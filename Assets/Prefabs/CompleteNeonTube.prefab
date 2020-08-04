@@ -250,11 +250,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioRe: {fileID: 0}
-  _band: 41
+  _band: 39
   _startScale: 1
   _scaleMultiplier: 0
   _useBuffer: 1
-  _objectNumber: 40
+  _objectNumber: 38
 --- !u!114 &2087097482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   Rotated: 0
   xAngle: 0
   yAngle: 0
-  zAngle: 15
+  zAngle: 20
 --- !u!1001 &6552596817362456435
 PrefabInstance:
   m_ObjectHideFlags: 0

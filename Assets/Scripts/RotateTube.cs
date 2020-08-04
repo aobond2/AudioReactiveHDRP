@@ -16,12 +16,13 @@ public class RotateTube : MonoBehaviour
 
     public void Rotate()
     {
-        rotatedObject.transform.Rotate(xAngle, yAngle, zAngle, Space.World);
+        rotatedObject.transform.Rotate(Random.Range(-xAngle, xAngle), Random.Range(-yAngle, yAngle), Random.Range(-zAngle, zAngle), Space.World);
     }
 
     public void Rotate(float xAngle, float yAngle, float zAngle)
-    {
-        rotatedObject.transform.Rotate(xAngle, yAngle, zAngle, Space.World);
+    {        
+        rotatedObject.transform.Rotate(Random.Range(-xAngle, xAngle), Random.Range(-yAngle, yAngle), Random.Range(-zAngle, zAngle), Space.World);
+        //rotatedObject.transform.position
     }
 
 
