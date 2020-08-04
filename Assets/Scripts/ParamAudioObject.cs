@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParamCube : MonoBehaviour
+public class ParamAudioObject : MonoBehaviour
 {
     public AudioRe audioRe;
     public int _band = 1;
     public float _startScale, _scaleMultiplier;
     public bool _useBuffer;
+    public int _objectNumber = 0;
 
     // Start is called before the first frame update
     void Start()

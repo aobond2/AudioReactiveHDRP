@@ -9,12 +9,17 @@ public class TubeLightCreate : MonoBehaviour
     Renderer rend;
     Vector3 rend_size;
     public float cube_distance = 1f;
-    public Transform prefab;
+    public GameObject prefab;
     float rend_length;
     int instance_number;
-    ParamCube cube;
-    public int tubes_number;
+    ParamAudioObject AudioObject;
+    int tubes_number;
     int rounded_frequency;
+    RotateTube rotateTube;
+    public int percentageObjectRotated;
+    int numberObjectRotated;
+
+    public List<GameObject> tubeList = new List<GameObject>();
 
 
     // Start is called before the first frame update
@@ -25,28 +30,60 @@ public class TubeLightCreate : MonoBehaviour
         rend_length = rend_size.x;
         instance_number = (Mathf.RoundToInt(rend_length / cube_distance));
         Vector3 spawn_start = transform.position - new Vector3((rend_size.x) / 2, 0, 0);
-        cube = prefab.GetComponent<ParamCube>();
-        cube._band = 1;
+        AudioObject = prefab.GetComponent<ParamAudioObject>();
+        rotateTube = prefab.GetComponent<RotateTube>();
+        AudioObject._band = 1;
         tubes_number = 0;
         CountFrequency();
-        
+        AudioObject._objectNumber = 0;
+
+
         for (int i = 0; i < instance_number * 2; i++)
         {
-            Instantiate(prefab, new Vector3 (spawn_start.x + cube_distance, 0, spawn_start.z), Quaternion.identity);
+            GameObject instantiatedGo = Instantiate(prefab, new Vector3 (spawn_start.x + cube_distance, 0, spawn_start.z), Quaternion.identity);
             spawn_start.x = spawn_start.x + cube_distance;
             i += 1;
-            cube._band += rounded_frequency;
-            cube.audioRe = _audioRe;
+            AudioObject._band += rounded_frequency;
+            AudioObject.audioRe = _audioRe;
+            AudioObject._objectNumber += 1;
             tubes_number += 1;
+            tubeList.Add(instantiatedGo);
+            
         }
 
-        //DestroyImmediate(rend);
+        RotateObject();   
         rend.enabled = false;
     }
 
     void CountFrequency()
     {
         rounded_frequency = (64 / instance_number);
+    }
+
+    void RotateObject()
+    {
+        Debug.Log("Rotation started.");
+
+        int numberObjectRotated = percentageObjectRotated * tubes_number / 100;
+
+        Debug.Log("Number Object Rotated : " + numberObjectRotated);
+
+        for (int e = 0; e < numberObjectRotated; e++)
+        {
+            GameObject rotate = tubeList[UnityEngine.Random.Range(0, tubeList.Count)];            
+            RotateTube tubeRotation = rotate.GetComponent<RotateTube>();
+            //tubeRotation.Rotated = true;
+            //print(rotate);
+            if (tubeRotation.Rotated == false)
+            {
+
+                tubeRotation.Rotate();
+                tubeRotation.Rotated = true;
+                //print(rotate);
+                //rotate.transform.Rotate(0, 20, 0, Space.Self);
+
+            }
+        }
     }
 
     // Update is called once per frame
