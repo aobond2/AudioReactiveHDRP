@@ -22,7 +22,6 @@ public class RotateTube : MonoBehaviour
     public void Rotate(float xAngle, float yAngle, float zAngle)
     {        
         rotatedObject.transform.Rotate(Random.Range(-xAngle, xAngle), Random.Range(-yAngle, yAngle), Random.Range(-zAngle, zAngle), Space.World);
-        //rotatedObject.transform.position
     }
 
 

@@ -13,11 +13,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioRe: {fileID: 0}
-  _band: 0
+  _band: 64
   _startScale: 1
-  _scaleMultiplier: 1
+  _scaleMultiplier: 0
   _useBuffer: 1
-  _objectNumber: 0
+  _objectNumber: 21
+--- !u!114 &9011075320861507863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2979270450445428667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731095a05e145924fbef606297feaca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatedObject: {fileID: 2979270450445428667}
+  Rotated: 0
+  xAngle: 0
+  yAngle: 0
+  zAngle: 10
 --- !u!1 &7118394987613810914
 GameObject:
   m_ObjectHideFlags: 0
