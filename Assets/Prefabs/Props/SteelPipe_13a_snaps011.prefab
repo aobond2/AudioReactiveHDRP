@@ -112,6 +112,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7be56fda0d7ddaf44b2da15558425ea6, type: 2}
+    - target: {fileID: 20500000, guid: cdc81164f028b104094ab4223686a205, type: 3}
+      propertyPath: m_LODs.Array.data[4].screenRelativeHeight
+      value: 0.0022742096
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: cdc81164f028b104094ab4223686a205, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.0070852926
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: cdc81164f028b104094ab4223686a205, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.013373855
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: cdc81164f028b104094ab4223686a205, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.02228327
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: cdc81164f028b104094ab4223686a205, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.03748867
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc81164f028b104094ab4223686a205, type: 3}
 --- !u!1 &1632738154763817027 stripped
