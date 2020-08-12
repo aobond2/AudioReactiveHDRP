@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3163226855087903825}
   - component: {fileID: 1991699930020314720}
   - component: {fileID: 3975226541883265746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Area Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353057291949252114}
   m_LocalRotation: {x: 0.49999857, y: -0.5000012, z: 0.49999875, w: 0.5000016}
-  m_LocalPosition: {x: 0, y: -0.076, z: 0.045}
+  m_LocalPosition: {x: 0, y: -0.021, z: 0.045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6729848353817094296}
@@ -41,13 +41,13 @@ Light:
   m_GameObject: {fileID: 1353057291949252114}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 2
+  m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.9960785, g: 0.8862746, b: 0.79215693, a: 1}
-  m_Intensity: 5876.49
-  m_Range: 4
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
+  m_Intensity: 386.72607
+  m_Range: 4.5
+  m_SpotAngle: 135
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -89,9 +89,9 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4}
-  m_UseBoundingSphereOverride: 1
-  m_ShadowRadius: 1.97
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5}
+  m_UseBoundingSphereOverride: 0
+  m_ShadowRadius: 1
   m_ShadowAngle: 0
 --- !u!114 &3975226541883265746
 MonoBehaviour:
@@ -110,11 +110,11 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
-  m_PointlightHDType: 1
+  m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 1200
-  m_EnableSpotReflector: 0
+  m_Intensity: 1500
+  m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
   m_LightDimmer: 1
@@ -122,15 +122,15 @@ MonoBehaviour:
   m_LightUnit: 0
   m_FadeDistance: 10000
   m_AffectDiffuse: 1
-  m_AffectSpecular: 0
+  m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 1.3
   m_ShapeHeight: 0.05
   m_AspectRatio: 1
-  m_ShapeRadius: 1.97
+  m_ShapeRadius: 1
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
-  m_CustomSpotLightShadowCone: 30
+  m_CustomSpotLightShadowCone: 1
   m_MaxSmoothness: 0.99
   m_ApplyRangeAttenuation: 1
   m_DisplayAreaLightEmissiveMesh: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   useOldInspector: 0
   useVolumetric: 1
   featuresFoldout: 1
-  showAdditionalSettings: 5
+  showAdditionalSettings: 13
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
 --- !u!1 &6390030579241040773
@@ -450,7 +450,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a5fe7627c2c181d469f9f88546b4bb47, type: 2}
+    - target: {fileID: 4278200481962586376, guid: 474d8245253bee743b06f326fc761bbc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5fe7627c2c181d469f9f88546b4bb47, type: 2}
     - target: {fileID: 4431670454091400558, guid: 474d8245253bee743b06f326fc761bbc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b793af8ff9c1c624a9ac40a03d96e0c5, type: 2}
+    - target: {fileID: 5447058701234417818, guid: 474d8245253bee743b06f326fc761bbc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -470,6 +480,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8835409689826365435, guid: 474d8245253bee743b06f326fc761bbc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5fe7627c2c181d469f9f88546b4bb47, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 474d8245253bee743b06f326fc761bbc, type: 3}
 --- !u!4 &7414243182996182517 stripped
