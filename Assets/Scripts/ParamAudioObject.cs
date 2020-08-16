@@ -11,9 +11,17 @@ public class ParamAudioObject : MonoBehaviour
     public int _objectNumber = 0;
 
     public Transform _lightObject;
+    public Transform _realLight;
+
     public float _emissiveValue;
+    public float _lightIntensity;
 
     Material _lightMaterial;
+    Light _myLight;
+
+    public float _RealLightIntensity;
+
+    bool _haveLight = false;
 
     // Start is called before the first frame update
     private void Awake()
@@ -31,6 +39,14 @@ public class ParamAudioObject : MonoBehaviour
                 _lightObject = child;
                 _lightMaterial = _lightObject.GetComponent<MeshRenderer>().materials[0];
                 _emissiveValue = _lightMaterial.GetFloat("_EmissiveIntensity");
+            }
+            if (child.CompareTag("RealLight"))
+            {
+                _haveLight = true;
+
+                _realLight = child;
+                _myLight = _realLight.GetComponent<Light>();
+                //_lightIntensity = _myLight
             }
         }
 
@@ -50,6 +66,12 @@ public class ParamAudioObject : MonoBehaviour
                 //Need to fix turning on off value
                 //_lightMaterial.SetFloat("_EmissiveIntensity", audioRe._audioBandBuffer64[_band] * _emissiveValue);
                 _lightMaterial.SetFloat("_AudioEmissiveControl", (audioRe._audioBandBuffer64[_band]));
+                
+                //set light intensity based on band
+                if (_haveLight) 
+                {
+                    _myLight.intensity = (audioRe._audioBandBuffer64[_band]) * _RealLightIntensity;
+                } 
             }
             if (!_useBuffer && audioRe._audioBand64[_band] > 0)
             {

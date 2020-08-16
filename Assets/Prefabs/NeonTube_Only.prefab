@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 3975226541883265746}
   m_Layer: 9
   m_Name: Area Light
-  m_TagString: Untagged
+  m_TagString: RealLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3163226855087903825
 Transform:
   m_ObjectHideFlags: 0
@@ -91,7 +91,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 1
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!114 &3975226541883265746
 MonoBehaviour:
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_ShapeWidth: 1.3
   m_ShapeHeight: 0.05
   m_AspectRatio: 1
-  m_ShapeRadius: 1
+  m_ShapeRadius: 0
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 1
@@ -249,12 +249,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioRe: {fileID: 0}
-  _band: 0
+  _band: 40
   _startScale: 1
   _scaleMultiplier: 0
   _useBuffer: 1
   _objectNumber: 39
   _lightObject: {fileID: 0}
+  _realLight: {fileID: 0}
+  _emissiveValue: 0
+  _lightIntensity: 0
+  _RealLightIntensity: 2000
 --- !u!114 &2087097482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +346,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2cc12ff5460e2104c9b55353b1a936d0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: -397027486113354586, guid: 2cc12ff5460e2104c9b55353b1a936d0,
         type: 3}
