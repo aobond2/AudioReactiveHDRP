@@ -91,7 +91,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 1
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!114 &3975226541883265746
 MonoBehaviour:
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_ShapeWidth: 1.3
   m_ShapeHeight: 0.05
   m_AspectRatio: 1
-  m_ShapeRadius: 1
+  m_ShapeRadius: 0
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 1
@@ -255,6 +255,8 @@ MonoBehaviour:
   _scaleMultiplier: 0
   _useBuffer: 1
   _objectNumber: 0
+  _lightObject: {fileID: 0}
+  _emissiveValue: 0
 --- !u!114 &2087097482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +346,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: -397027486113354586, guid: 2cc12ff5460e2104c9b55353b1a936d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: LightObject
+      objectReference: {fileID: 0}
     - target: {fileID: 613347732683638315, guid: 2cc12ff5460e2104c9b55353b1a936d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,7 +365,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4ca1cd85774a89347a07e5146d52767b, type: 2}
+      objectReference: {fileID: 2100000, guid: 61dcc25018e6a304d83391149d5c5527, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc12ff5460e2104c9b55353b1a936d0, type: 3}
 --- !u!1 &6210157979031024162 stripped

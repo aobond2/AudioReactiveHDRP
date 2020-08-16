@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 131.18076, g: 162.51416, b: 215.03311, a: 1}
+  m_IndirectSpecularColor: {r: 131.13168, g: 162.57239, b: 215.29922, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -866,7 +866,7 @@ PrefabInstance:
     - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4382
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
@@ -916,7 +916,17 @@ PrefabInstance:
     - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.3479815
+      value: 9.111258
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7631883798806833642, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
@@ -5134,7 +5144,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 9
+  m_Intensity: 8
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -5148,7 +5158,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 3
+  m_ShapeRadius: 2
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -5236,7 +5246,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 64
+  m_Intensity: 32
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5281,9 +5291,9 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6.2823e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 2.4102e-41, y: 1.04e-43, z: 5.83e-43, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 3
+  m_ShadowRadius: 2
   m_ShadowAngle: 0
 --- !u!1 &433521026
 GameObject:
@@ -7166,6 +7176,7 @@ Transform:
   - {fileID: 1496151039}
   - {fileID: 1407436262}
   - {fileID: 1436371639}
+  - {fileID: 970791883}
   m_Father: {fileID: 824292385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7959,7 +7970,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 9
+  m_Intensity: 8
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -7973,7 +7984,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 3
+  m_ShapeRadius: 2
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -8061,7 +8072,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 64
+  m_Intensity: 32
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8108,7 +8119,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 6.4286e-41, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 3
+  m_ShadowRadius: 2
   m_ShadowAngle: 0
 --- !u!1001 &575987401
 PrefabInstance:
@@ -8120,7 +8131,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e40b03bb8ad47484e9ad6735e6467edb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.11
+      value: 14.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e40b03bb8ad47484e9ad6735e6467edb,
         type: 3}
@@ -8309,13 +8320,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580737887}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 1, z: -6.42}
+  m_LocalRotation: {x: -0.2588186, y: -0.00000010053327, z: 0.00000076362596, w: 0.965926}
+  m_LocalPosition: {x: 0.54, y: 0.37, z: -6.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 157634094}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -30.000002, y: 0, z: 0}
 --- !u!114 &580737889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8336,7 +8347,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 10
+  m_Intensity: 13
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -8350,7 +8361,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 3
+  m_ShapeRadius: 0
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -8423,7 +8434,7 @@ MonoBehaviour:
   useOldInspector: 0
   useVolumetric: 1
   featuresFoldout: 1
-  showAdditionalSettings: 8
+  showAdditionalSettings: 12
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
 --- !u!108 &580737890
@@ -8438,9 +8449,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 128
-  m_Range: 15
-  m_SpotAngle: 144
+  m_Intensity: 1024
+  m_Range: 3.62
+  m_SpotAngle: 82
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -8483,9 +8494,9 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 5.7464e-41, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 3
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &581637399
 PrefabInstance:
@@ -11078,7 +11089,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 12
+  m_Intensity: 11
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -11180,7 +11191,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 512
+  m_Intensity: 256
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11225,7 +11236,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6.8983e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 7.5305107e-38, y: 9.1835e-41, z: 4.5e-44, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 3
   m_ShadowAngle: 0
@@ -11981,6 +11992,8 @@ MonoBehaviour:
   _scaleMultiplier: 0
   _useBuffer: 0
   _objectNumber: 0
+  _lightObject: {fileID: 0}
+  _emissiveValue: 0
 --- !u!1 &824292384
 GameObject:
   m_ObjectHideFlags: 0
@@ -13426,7 +13439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 32.74286, y: 0.6119998, z: -8.615998}
+  m_FollowOffset: {x: 32.74286, y: 0.6119998, z: -8.7909975}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -13532,7 +13545,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 12
+  m_Intensity: 11
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -13634,7 +13647,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 512
+  m_Intensity: 256
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -13679,7 +13692,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6.279e-41, z: 0, w: -1}
+  m_BoundingSphereOverride: {x: 8.375397e-38, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 3
   m_ShadowAngle: 0
@@ -14285,7 +14298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968420167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 8.24, z: 1.08}
+  m_LocalPosition: {x: -0, y: 8.24, z: 0.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059697187}
@@ -14311,7 +14324,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 13
+  m_Intensity: 11
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -14325,7 +14338,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 5
+  m_ShapeRadius: 0
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -14413,7 +14426,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.7394091, b: 0.5322179, a: 1}
-  m_Intensity: 1024
+  m_Intensity: 256
   m_Range: 25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -14458,9 +14471,9 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6.7722e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 8.1387e-41, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 5
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1001 &970370130
 PrefabInstance:
@@ -14572,6 +14585,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 970370130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &970791882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970791883}
+  - component: {fileID: 970791884}
+  m_Layer: 0
+  m_Name: Decal Projector (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970791883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970791882}
+  m_LocalRotation: {x: 0.50000006, y: -0.4999984, z: 0.49999985, w: 0.5000017}
+  m_LocalPosition: {x: -0.9, y: 0.2900002, z: 3.3599997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 525386125}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 90.00001}
+--- !u!114 &970791884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970791882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 2
+  m_Material: {fileID: 2100000, guid: c90c98a8e5a1f0f418d115102518585f, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_AffectsTransparency: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 12, y: 0.2, z: 0.5}
+  m_FadeFactor: 1
 --- !u!1001 &981077521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17636,7 +17702,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5ab654dcbf26bd447b62dddd8d17a388,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.21
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ab654dcbf26bd447b62dddd8d17a388,
         type: 3}
@@ -17870,6 +17936,107 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.5}
   m_Size: {x: 6, y: 6, z: 1}
   m_FadeFactor: 1
+--- !u!114 &1163123326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 0
+  exposure:
+    m_OverrideState: 0
+    m_Value: 10
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxColor:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  hdriSky:
+    m_OverrideState: 0
+    m_Value: {fileID: 8900000, guid: 8253d41e6e8b11a4cbe77a4f8f82934d, type: 3}
+  enableBackplate:
+    m_OverrideState: 0
+    m_Value: 0
+  backplateType:
+    m_OverrideState: 0
+    m_Value: 0
+  groundLevel:
+    m_OverrideState: 0
+    m_Value: 0
+  scale:
+    m_OverrideState: 0
+    m_Value: {x: 32, y: 32}
+  projectionDistance:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 0.0000001
+  plateRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0}
+  blendAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 100
+  shadowTint:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  pointLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  dirLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  rectLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!1001 &1169074413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18233,7 +18400,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 5500
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 6.3972e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6.7e-44, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0.53
@@ -20718,107 +20885,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1302393678}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1303447546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 10
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: 8253d41e6e8b11a4cbe77a4f8f82934d, type: 3}
-  enableBackplate:
-    m_OverrideState: 0
-    m_Value: 0
-  backplateType:
-    m_OverrideState: 0
-    m_Value: 0
-  groundLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  scale:
-    m_OverrideState: 0
-    m_Value: {x: 32, y: 32}
-  projectionDistance:
-    m_OverrideState: 0
-    m_Value: 16
-    min: 0.0000001
-  plateRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexOffset:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0}
-  blendAmount:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 100
-  shadowTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  pointLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  dirLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  rectLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!1001 &1303909277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21176,7 +21242,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e40b03bb8ad47484e9ad6735e6467edb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.12
+      value: -13.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e40b03bb8ad47484e9ad6735e6467edb,
         type: 3}
@@ -21642,7 +21708,7 @@ PrefabInstance:
     - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4382
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
@@ -21692,7 +21758,17 @@ PrefabInstance:
     - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.3479815
+      value: 9.111258
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429012860260151846, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7631883798806833642, guid: 0b5b330a244fc6d4bbaba4bd03f87ce5,
         type: 3}
@@ -22052,7 +22128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: 5821a8eb0d22bca4587fc081794728de, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1303447546}
+  m_SkySettings: {fileID: 1163123326}
   m_SkySettingsFromProfile: {fileID: 5275608588102630736, guid: 5821a8eb0d22bca4587fc081794728de,
     type: 2}
 --- !u!4 &1393480002
@@ -23291,7 +23367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453386946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.8, y: 0.36, z: 2.485}
+  m_LocalPosition: {x: 31.8, y: 0.36, z: 2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23361,7 +23437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463910877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.93, y: 6.6, z: 2.89}
+  m_LocalPosition: {x: 2.16, y: 6.6, z: -3.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1692376513}
@@ -26849,7 +26925,7 @@ VisualEffect:
       - m_Value: {x: -1.07, y: 1.062, z: 5.02}
         m_Name: AttractiveTargetPosition
         m_Overridden: 1
-      - m_Value: {x: 2.93, y: 6.6, z: 2.89}
+      - m_Value: {x: 2.16, y: 6.6, z: -3.88}
         m_Name: SourcePosition
         m_Overridden: 1
     m_Vector4f:
@@ -26861,7 +26937,7 @@ VisualEffect:
       - m_Value: 1176256512
         m_Name: Band
         m_Overridden: 1
-      - m_Value: 10
+      - m_Value: 5
         m_Name: SpawnRate
         m_Overridden: 1
     m_Matrix4x4f:
@@ -27378,7 +27454,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 9
+  m_Intensity: 8
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -27392,7 +27468,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 3
+  m_ShapeRadius: 2
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -27480,7 +27556,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 64
+  m_Intensity: 32
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -27525,9 +27601,9 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 6.9493e-41, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 6.94e-43, y: 3.5e-44, z: 0, w: -5.489525}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 3
+  m_ShadowRadius: 2
   m_ShadowAngle: 0
 --- !u!1001 &1718839318
 PrefabInstance:
@@ -28051,7 +28127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749706986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.8, y: 0.36, z: 2.485}
+  m_LocalPosition: {x: 31.8, y: 0.36, z: 2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 914390813}
@@ -28329,7 +28405,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 12
+  m_Intensity: 11
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -28431,7 +28507,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.66180134, g: 0.92867064, b: 0.9811321, a: 1}
-  m_Intensity: 512
+  m_Intensity: 256
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -28476,7 +28552,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.98e-43, y: -17.44069, z: 6.98e-43, w: 0}
+  m_BoundingSphereOverride: {x: 6.94e-43, y: -16.830765, z: 6.94e-43, w: 5.9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 3
   m_ShadowAngle: 0
@@ -31486,6 +31562,8 @@ MonoBehaviour:
   _scaleMultiplier: 0
   _useBuffer: 0
   _objectNumber: 0
+  _lightObject: {fileID: 0}
+  _emissiveValue: 0
 --- !u!1001 &1893490462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33735,7 +33813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094215921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.24, z: 3.16}
+  m_LocalPosition: {x: 0, y: 8.24, z: 3.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 157634094}
@@ -33761,7 +33839,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 10
+  m_Intensity: 11
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -33775,7 +33853,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 5
+  m_ShapeRadius: 1
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -33863,7 +33941,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.7394091, b: 0.5322179, a: 1}
-  m_Intensity: 128
+  m_Intensity: 256
   m_Range: 25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -33908,9 +33986,9 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.3598e-41, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 7.6814e-41, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 5
+  m_ShadowRadius: 1
   m_ShadowAngle: 0
 --- !u!1001 &2095490710
 PrefabInstance:

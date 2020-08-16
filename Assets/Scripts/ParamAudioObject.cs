@@ -10,9 +10,29 @@ public class ParamAudioObject : MonoBehaviour
     public bool _useBuffer;
     public int _objectNumber = 0;
 
+    public Transform _lightObject;
+    public float _emissiveValue;
+
+    Material _lightMaterial;
+
     // Start is called before the first frame update
+    private void Awake()
+    {
+
+    }
+
     void Start()
     {
+        Transform[] children = GetComponentsInChildren<Transform>();
+        foreach (Transform child in children)
+        {
+            if (child.CompareTag("LightObject"))
+            {
+                _lightObject = child;
+                _lightMaterial = _lightObject.GetComponent<MeshRenderer>().materials[0];
+                _emissiveValue = _lightMaterial.GetFloat("_EmissiveIntensity");
+            }
+        }
 
     }
 
@@ -23,15 +43,20 @@ public class ParamAudioObject : MonoBehaviour
         {
             if (_useBuffer && audioRe._audioBand64[_band] > 0)
             {
-                //transform.localScale = new Vector3(transform.localScale.x,
-                //                        (audioRe._audioBandBuffer64[_band] * _scaleMultiplier) + _startScale,
-                //                        transform.localScale.z);
+                transform.localScale = new Vector3(transform.localScale.x,
+                                        (audioRe._audioBandBuffer64[_band] * _scaleMultiplier) + _startScale,
+                                        transform.localScale.z);
+
+                //Need to fix turning on off value
+                //_lightMaterial.SetFloat("_EmissiveIntensity", audioRe._audioBandBuffer64[_band] * _emissiveValue);
+                _lightMaterial.SetFloat("_AudioEmissiveControl", (audioRe._audioBandBuffer64[_band]));
             }
             if (!_useBuffer && audioRe._audioBand64[_band] > 0)
             {
                 //transform.localScale = new Vector3(transform.localScale.x,
                 //                        (audioRe._audioBand64[_band] * _scaleMultiplier) + _startScale,
                 //                        (audioRe._Amplitude *2 )); //+ transform.localScale.z);
+                //_lightMaterial.SetFloat("_EmissiveExposureWeight", 0);
             }
         }
 
